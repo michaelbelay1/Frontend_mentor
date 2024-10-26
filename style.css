@@ -1,0 +1,133 @@
+/* * {
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Kumbh Sans;
+    font-size: 18px;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color:     hsl(185, 75%, 39%);
+
+}
+
+.background-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%;
+    background:
+        url("/images/bg-pattern-top.svg") 100% 100% no-repeat;
+        /* background-color: rgb(226, 110, 43); */
+}
+    
+    
+.background-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+    background:
+        url("/images/bg-pattern-top.svg") ;
+}
+
+.card {
+    height: 350px;
+    width: 350px;
+    background-color: rgb(230, 236, 229);
+    border-radius: 0.8rem;
+    position: relative; 
+    z-index: 10; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card_top {
+    position: relative;
+    border-radius: 0.8rem 0.8rem 0 0;
+    height: 35%;
+    width: 100%;    
+    background-image: url("/images/bg-pattern-card.svg");
+    background-color: rgb(42, 134, 165);
+}
+
+.card_middle {
+    height: 65%;
+    width: 100%;
+}
+
+.card_middle .profile_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    padding: 25px;
+    margin: 25px;
+}
+
+.card_middle .stats {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card_middle .profile_info p{
+    /* font-size: medium; */
+    text-align: center;
+    padding:6px;    
+}
+
+.stats ul li {
+    margin-top: 0px;
+    padding-top:0px;
+}
+
+.stats p {
+    /* font-size: small; */
+    text-align: center;
+}
+
+p, h4, hr {
+    padding: 0px;
+    margin: 0;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+span {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.profile_img {
+    position: absolute;
+    bottom: 0;
+
+    right: 40%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: url("/images/image-victor.jpg ") no-repeat;
+    background-size: cover;
+    /* border-radius: 50%; */
+    border: 3px solid white;
+    transform: translateY(35px);
+}
